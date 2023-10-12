@@ -4,8 +4,8 @@
 		font-family: $font_name;
 		font-display: swap;
 		src:
-			url("../fonts/#{$file_name}.woff2") format("woff2"),
-			url("../fonts/#{$file_name}.woff") format("woff");
+			url('../fonts/#{$file_name}.woff2') format('woff2'),
+			url('../fonts/#{$file_name}.woff') format('woff');
 		font-weight: #{$weight};
 		font-style: #{$style};
 	}
@@ -29,7 +29,7 @@
 //Currency
 @mixin currency($sym) {
 	&::after {
-		content: "#{$sym}";
+		content: '#{$sym}';
 	}
 }
 
@@ -41,7 +41,14 @@
 }
 
 // Адаптивное свойство (clamp)
-@mixin adaptiveValue($property, $startSize, $minSize, $keepSize: 0, $widthFrom: $containerWidth, $widthTo: $minWidth) {
+@mixin adaptiveValue(
+	$property,
+	$startSize,
+	$minSize,
+	$keepSize: 0,
+	$widthFrom: $containerWidth,
+	$widthTo: $minWidth
+) {
 	@if ($startSize==0) {
 		$startSize: 0.000001;
 	}
@@ -67,13 +74,20 @@
 	@if ($yIntersection==0) {
 		$yIntersection: 0.000001;
 	}
-	$flyValue: #{toRem($yIntersection)}" + " #{$slope * 100}vw;
+	$flyValue: #{toRem($yIntersection)}' + ' #{$slope * 100}vw;
 
 	// Получение значения свойства
-	$propertyValue: #{"clamp(" toRem($minSize) "," $flyValue "," toRem($startSize) ")"};
+	$propertyValue: #{'clamp(' toRem($minSize) ',' $flyValue ',' toRem($startSize)
+		')'};
 	//  Если отрицательные значения
 	@if ($minSize > $startSize) {
-		$propertyValue: #{"clamp(" toRem($startSize) "," $flyValue "," toRem($minSize) ")"};
+		$propertyValue: #{'clamp('
+			toRem($startSize)
+			','
+			$flyValue
+			','
+			toRem($minSize)
+			')'};
 	}
 
 	// Устанавливаем значение по умолчанию
@@ -90,7 +104,12 @@
 		}
 		// Если не поддерживается clamp();
 		@supports not (#{$property}: $propertyValue) {
-			#{$property}: calc(#{toRem($minSize)} + #{$addSize} * (100vw - #{toRem($widthTo)}) / #{math.div($widthFrom, 16) - math.div($widthTo, 16)});
+			#{$property}: calc(
+				#{toRem($minSize)} + #{$addSize} * (100vw - #{toRem($widthTo)}) / #{math.div(
+						$widthFrom,
+						16
+					) - math.div($widthTo, 16)}
+			);
 		}
 	}
 	@if $keepSize != 1 and $keepSize != 2 {
