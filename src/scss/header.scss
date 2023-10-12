@@ -1,56 +1,85 @@
 //====================================================================================================
-
+//																		Header
 //====================================================================================================
 
-//Burger
-/*
-.icon-menu {
-	display: none;
-	@media (max-width: $mobile) {
-		display: block;
-		position: relative;
-		width: toRem(30);
-		height: toRem(18);
-		z-index: 5;
-		@media (any-hover: none) {
-			cursor: default;
-		}
-		span,
-		&::before,
-		&::after {
-			content: "";
-			transition: all 0.3s ease 0s;
-			right: 0;
-			position: absolute;
-			width: 100%;
-			height: toRem(2);
-			background-color: #000;
-		}
-		&::before {
-			top: 0;
-		}
-		&::after {
-			bottom: 0;
-		}
-		span {
-			top: calc(50% - toRem(1));
-		}
-		.menu-open & {
-			span {
-				width: 0;
-			}
-			&::before,
-			&::after {
-			}
-			&::before {
-				top: calc(50% - toRem(1));
-				transform: rotate(-45deg);
-			}
-			&::after {
-				bottom: calc(50% - toRem(1));
-				transform: rotate(45deg);
-			}
-		}
+.header {
+	// .header__container
+	&__container {
+	}
+	// .header__top
+	&__top {
+	}
+	// .header__top-left
+	&__top-left {
+	}
+	// .header__logo
+	&__logo {
+	}
+	// .header__top-right
+	&__top-right {
+	}
+	// .header__nav
+	&__nav {
+	}
+	// .header__list
+	&__list {
+	}
+	// .header__item
+	&__item {
+	}
+	// .header__social
+	&__social {
+	}
+	// .header__facebook
+	&__facebook {
+	}
+	// .header__facebook-ico
+	&__facebook-ico {
+	}
+	// .header__twitter
+	&__twitter {
+	}
+	// .header__twitter-ico
+	&__twitter-ico {
+	}
+	// .header__instagram
+	&__instagram {
+	}
+	// .header__instagram-ico
+	&__instagram-ico {
+	}
+	// .header__bottom
+	&__bottom {
+	}
+	// .header__swiper
+	&__swiper {
+	}
+	// .header__swiper-wrapper
+	&__swiper-wrapper {
+	}
+	// .header__swiper-slide
+	&__swiper-slide {
+	}
+	// .header__swiper-pagination
+	&__swiper-pagination {
+	}
+	// .header__swiper-button-prev
+	&__swiper-button-prev {
+	}
+	// .header__swiper-button-next
+	&__swiper-button-next {
 	}
 }
-*/
+
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-pagination {
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
