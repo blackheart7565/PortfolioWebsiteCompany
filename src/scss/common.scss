@@ -2,8 +2,34 @@
 .page {
 	// .page__who-we
 	&__who-we {
-		@include adaptiveValue("padding-top", 251, 251);
-		@include adaptiveValue("padding-bottom", 260, 260);
+		@include adaptiveValue('margin-top', 154, 70);
+	}
+	// .page__services
+	&__services {
+	}
+	// .page__featured-work
+	&__featured-work {
+	}
+	// .page__work-process
+	&__work-process {
+	}
+	// .page__we-create
+	&__we-create {
+	}
+	// .page__values
+	&__values {
+	}
+	// .page__articles
+	&__articles {
+	}
+	// .page__brands
+	&__brands {
+	}
+	// .page__whats-new
+	&__whats-new {
+	}
+	// .page__lets-work
+	&__lets-work {
 	}
 }
 //===========
@@ -11,9 +37,9 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	@include adaptiveValue("width", 641, 300);
-	@include adaptiveValue("height", 641, 300);
-	background: url("@img/bg-shapes.svg") 0 0 / contain no-repeat;
+	@include adaptiveValue('width', 641, 300);
+	@include adaptiveValue('height', 641, 300);
+	background: url('@img/bg-shapes.svg') 0 0 / contain no-repeat;
 	z-index: -1;
 	//-----
 	// transform: translate( %, %); //позицианирование
