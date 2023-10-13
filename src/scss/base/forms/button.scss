@@ -1,14 +1,56 @@
 //<BUTTONS (a.btn+tab)>
 // Сніппет (HTML): btn
 
+// <a href="#" class="button button--b"><span>about us</span></a>
+// <a href="#" class="button button--w"><span>about us</span></a>
+
 .button {
 	display: inline-flex;
-	padding: 0px 0px;
-	@media (any-hover: hover) {
-		&:hover {
+	padding: 14px 33px;
+	font-weight: 500;
+	line-height: math.div(26, 16);
+	min-width: toRem(170);
+	justify-content: center;
+	transition: all 0.3s;
+	span {
+		padding-right: toRem(28);
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			right: 0;
+			transform: translate(0px, -25%);
+			width: toRem(6);
+			height: toRem(6);
+			border-radius: 50%;
+			background-color: #fff;
 		}
 	}
-	&--fw {
-		width: 100%;
+	&--b {
+		background-color: #0e0e0e;
+		color: #fff;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: #000000;
+				border-radius: 8px;
+			}
+		}
+	}
+	&--w {
+		background-color: #fff;
+		color: #0e0e0e;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: #e2e2e2;
+				border-radius: 8px;
+				color: #000;
+			}
+		}
+		span {
+			&::after {
+				background-color: #0e0e0e;
+			}
+		}
 	}
 }
