@@ -49,9 +49,8 @@ function initSliders() {
 			//preloadImages: false,
 			//lazy: true,
 
-			/*
+			
 			// Ефекти
-			*/
 			// effect: 'slide',
 
 			effect: 'fade',
@@ -102,7 +101,7 @@ function initSliders() {
 				delay: 3000,
 				disableOnInteraction: false,
 			},
-			*/
+			
 
 			// Пагінація
 

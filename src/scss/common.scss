@@ -1,1 +1,21 @@
 // Заголовки, общие БЄМ блоки и проче...
+.page {
+	// .page__who-we
+	&__who-we {
+		@include adaptiveValue("padding-top", 251, 251);
+		@include adaptiveValue("padding-bottom", 260, 260);
+	}
+}
+//===========
+.sharpe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	@include adaptiveValue("width", 641, 300);
+	@include adaptiveValue("height", 641, 300);
+	background: url("@img/bg-shapes.svg") 0 0 / contain no-repeat;
+	z-index: -1;
+	//-----
+	// transform: translate( %, %); //позицианирование
+	//-----
+}
