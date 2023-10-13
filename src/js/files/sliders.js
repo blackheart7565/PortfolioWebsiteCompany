@@ -36,27 +36,22 @@ function initSliders() {
 		// Вказуємо склас потрібного слайдера
 		new Swiper('.swiper', {
 			grabCursor: true,
-			// observer: true,
-			// observeParents: true,
 			slidesPerView: 1,
-			spaceBetween: 30,
-			//autoHeight: true,
+			spaceBetween: 5,
 			speed: 500,
-
-			//touchRatio: 0,
-			//simulateTouch: false,
 			loop: true,
-			//preloadImages: false,
-			//lazy: true,
-
-			// Ефекти
-			// effect: 'slide',
-
 			effect: 'fade',
 			fadeEffect: {
 				// Enables slides cross fade ( Включает плавное затухание слайдов )
 				crossFade: true,
 			},
+			observer: true,
+			observeParents: true,
+			//autoHeight: true,
+			// touchRatio: 0,
+			// simulateTouch: false,
+			// preloadImages: false,
+			//lazy: true,
 
 			// effect: 'cube',
 			// cubeEffect: {
@@ -149,7 +144,7 @@ function initSliders() {
 			modules: [Navigation, Pagination],
 
 			// Події
-			on: {},
+			// on: {},
 		})
 	}
 }
