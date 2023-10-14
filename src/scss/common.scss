@@ -1,5 +1,7 @@
 // Заголовки, общие БЄМ блоки и проче...
 .page {
+	// background: #1d7a0a;
+
 	// .page__who-we
 	&__who-we {
 		@include adaptiveValue('margin-top', 154, 70);
