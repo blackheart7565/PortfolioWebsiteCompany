@@ -47,8 +47,29 @@
 		// font-size: toRem(24);
 		@include adaptiveValue('font-size', 24, 14);
 		color: #fff;
+		text-align: center;
 		line-height: 40px;
 		padding: 33px;
+		position: relative;
+
+		&::before {
+			content: '';
+			height: 1px;
+			background: #fff;
+			position: absolute;
+			@include adaptiveValue('width', 160, 90);
+			@include adaptiveValue('top', -90, -10);
+			@include adaptiveValue('left', -145, 10);
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			width: 1px;
+			background: #fff;
+			@include adaptiveValue('height', 70, 45);
+			@include adaptiveValue('bottom', -70, -40);
+			@include adaptiveValue('right', -10, 20);
+		}
 	}
 	// .articles__slide-subtitle
 	&__slide-subtitle {
