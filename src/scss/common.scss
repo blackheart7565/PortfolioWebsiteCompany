@@ -4,10 +4,13 @@
 
 	// .page__who-we
 	&__who-we {
-		@include adaptiveValue('margin-top', 154, 70);
+		@include adaptiveValue("padding-top", 154, 61);
+		@include adaptiveValue("padding-bottom", 80, 30);
 	}
 	// .page__services
 	&__services {
+		@include adaptiveValue("padding-top", 80, 30);
+		@include adaptiveValue("padding-bottom", 250, 250);
 	}
 	// .page__featured-work
 	&__featured-work {
@@ -37,11 +40,9 @@
 //===========
 .sharpe {
 	position: absolute;
-	top: 0;
-	left: 0;
-	@include adaptiveValue('width', 641, 300);
-	@include adaptiveValue('height', 641, 300);
-	background: url('@img/bg-shapes.svg') 0 0 / contain no-repeat;
+	@include adaptiveValue("width", 641, 400);
+	@include adaptiveValue("height", 641, 400);
+	border-radius: 50%;
 	z-index: -1;
 	//-----
 	// transform: translate( %, %); //позицианирование
