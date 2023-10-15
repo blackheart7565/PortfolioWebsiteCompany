@@ -126,7 +126,7 @@
 			display: flex !important;
 		}
 	}
-	// ,tabs__text
+	// .tabs__text
 	&__text {
 		max-width: 400px;
 		height: 140px;
@@ -141,5 +141,10 @@
 		@media (max-width: $mobile) {
 			max-width: toRem(500);
 		}
+	}
+
+	// .tabs__link
+	&__link {
+		align-self: center;
 	}
 }
