@@ -125,14 +125,14 @@ $white: #fff;
 		}
 	}
 	// .header__facebook-ico
-	// &__facebook-ico {
-	// }
+	&__facebook-ico {
+	}
 	// .header__twitter-ico
-	// &__twitter-ico {
-	// }
+	&__twitter-ico {
+	}
 	// .header__instagram-ico
-	// &__instagram-ico {
-	// }
+	&__instagram-ico {
+	}
 	// .header__bottom
 	&__bottom {
 		width: 100%;
@@ -140,18 +140,18 @@ $white: #fff;
 		@include adaptiveValue('padding-top', 90, 70);
 	}
 	// .header__swiper
-	// &__swiper {
-	// }
+	&__swiper {
+	}
 	// .header__swiper-wrapper
-	// &__swiper-wrapper {
-	// }
+	&__swiper-wrapper {
+	}
 	// .header__swiper-slide
 	&__swiper-slide {
 		position: relative;
 	}
 	// .header__swiper-slide-imges
-	// &__swiper-slide-imges {
-	// }
+	&__swiper-slide-imges {
+	}
 	// .header__swiper-slide-img
 	&__swiper-slide-img {
 		max-width: 100%;
@@ -195,24 +195,24 @@ $white: #fff;
 		border-radius: 50%;
 	}
 	// .header__swiper-pagination
-	// &__swiper-pagination {
-	// }
+	&__swiper-pagination {
+	}
 	// .header__swiper-button-prev
-	// &__swiper-button-prev {
-	// }
+	&__swiper-button-prev {
+	}
 	// .header__swiper-button-next
-	// &__swiper-button-next {
-	// }
+	&__swiper-button-next {
+	}
 }
 
 .swiper {
 	width: 100%;
 	height: 100%;
 }
-// .swiper-slide {
-// }
-// .swiper-pagination {
-// }
+.swiper-slide {
+}
+.swiper-pagination {
+}
 .swiper > .swiper-pagination-bullets.swiper-pagination-horizontal {
 	@include adaptiveValue('bottom', 50, 10);
 	@include adaptiveValue('left', 200, 30);
