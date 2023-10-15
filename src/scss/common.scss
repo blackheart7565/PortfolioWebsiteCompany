@@ -3,7 +3,12 @@
 	// .page__who-we
 	&__who-we {
 		@include adaptiveValue("padding-top", 251, 251);
-		@include adaptiveValue("padding-bottom", 260, 260);
+		@include adaptiveValue("padding-bottom", 90, 50);
+	}
+	&__services {
+		// @include adaptiveValue("padding-top", 100, 50);
+		@include adaptiveValue("padding-bottom", 560, 260);
+	
 	}
 }
 //===========
@@ -13,7 +18,7 @@
 	left: 0;
 	@include adaptiveValue("width", 641, 300);
 	@include adaptiveValue("height", 641, 300);
-	background: url("@img/bg-shapes.svg") 0 0 / contain no-repeat;
+	border-radius: 50%;
 	z-index: -1;
 	//-----
 	// transform: translate( %, %); //позицианирование
