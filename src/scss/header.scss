@@ -151,11 +151,13 @@ $white: #fff;
 	}
 	// .header__swiper-slide-imges
 	&__swiper-slide-imges {
+		@include adaptiveValue('height', 580, 150);
 	}
 	// .header__swiper-slide-img
 	&__swiper-slide-img {
-		max-width: 100%;
-		display: block;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
 	}
 	// .header__swiper-slide-title
 	// .header__swiper-slide-btn
