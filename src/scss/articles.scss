@@ -2,7 +2,6 @@
 
 .articles {
 	background: #0e0e0e;
-	// height: 591px;
 	@include adaptiveValue('height', 591, 500);
 	padding-bottom: 30px;
 	padding-top: 30px;
