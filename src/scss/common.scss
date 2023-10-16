@@ -19,6 +19,7 @@
 	}
 	// .page__work-process
 	&__work-process {
+		//---------------------------------
 	}
 	// .page__we-create
 	&__we-create {
@@ -28,12 +29,15 @@
 	}
 	// .page__articles
 	&__articles {
+		//---------------------------------
 	}
 	// .page__brands
 	&__brands {
 	}
 	// .page__whats-new
 	&__whats-new {
+		@include adaptiveValue('padding-top', 77, 30);
+		@include adaptiveValue('padding-bottom', 80, 50);
 	}
 	// .page__lets-work
 	&__lets-work {
