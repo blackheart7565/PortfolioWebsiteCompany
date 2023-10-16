@@ -33,8 +33,8 @@
 	}
 	// .page__brands
 	&__brands {
-		@include adaptiveValue('padding-top', 156, 30);
-		@include adaptiveValue('padding-bottom', 78, 50);
+		@include adaptiveValue('padding-top', 156, 70);
+		@include adaptiveValue('padding-bottom', 78, 60);
 	}
 	// .page__whats-new
 	&__whats-new {
