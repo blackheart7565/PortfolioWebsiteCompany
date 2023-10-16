@@ -81,6 +81,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
+
 	@supports (overflow: clip) {
 		overflow: clip;
 	}
@@ -168,6 +169,7 @@ body {
 @import 'brands';
 @import 'whats-new';
 @import 'footer';
+@import 'menu-burger';
 
 // Подключение стилей отдельных страниц
 @import 'home';

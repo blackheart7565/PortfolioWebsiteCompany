@@ -39,25 +39,30 @@ $white: #fff;
 		z-index: 600;
 	}
 	// .header__top-left
-	// &__top-left {
-	// }
+	&__top-left {
+	}
 	// .header__logo
 	&__logo {
 		font-size: 20px;
 		color: $white;
 	}
 	// .header__logo-text
-	// &__logo-text {
-	// }
+	&__logo-text {
+	}
 	// .header__top-right
 	&__top-right {
 		display: flex;
+		align-items: center;
 		height: 100%;
 		gap: 60px;
+
+		@media (max-width: $mobile) {
+			gap: 30px;
+		}
 	}
 	// .header__nav
 	&__nav {
-		@media screen and (max-width: 960px) {
+		@media (max-width: $mobile) {
 			display: none;
 		}
 	}

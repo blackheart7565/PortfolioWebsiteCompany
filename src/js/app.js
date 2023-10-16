@@ -246,6 +246,7 @@ import './files/sliders.js'
 // ========================================================================================================================================================================================================================================================
 /* Подключаем файлы со своим кодом */
 import './files/script.js'
+import { activeMenuBurger } from './modules/menuBurger.js'
 import { Tabs } from './modules/tabs.js'
 
 //============================================================================================================================================================================================================================================
@@ -253,3 +254,8 @@ import { Tabs } from './modules/tabs.js'
 const tabs = new Tabs('tabs', {
 	activeClass: 'tabs-active',
 })
+
+activeMenuBurger(document.getElementById('menu-burger'), 'menu-burger-active', {
+	btnOpenSelector: 'menu-burger-open',
+	btnCloseSelector: 'menu-burger-close',
+}).init()
