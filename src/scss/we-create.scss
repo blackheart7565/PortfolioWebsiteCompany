@@ -1,0 +1,134 @@
+//============================================1
+.we-create {
+	// .we-create__container
+	&__container {
+		display: flex;
+		min-height: 100%;
+		@include adaptiveValue("gap", 30, 15);
+		@media (max-width: $mobile) {
+			flex-direction: column;
+			@include adaptiveValue("padding-right", 50, 15, 0, 767.98, 320);
+			@include adaptiveValue("padding-left", 50, 15, 0, 767.98, 320);
+		}
+	}
+
+	// .we-create__block
+	&__block {
+		flex: 1 1 50%;
+	}
+}
+.block-img {
+	display: flex;
+	flex-direction: column;
+	@include adaptiveValue("gap", 30, 10);
+	// .block-img__item
+	&__item {
+		// flex: 1 1 50%;
+		// .block-img__item--top
+		&--top {
+		}
+		// .block-img__item--bot
+		&--bot {
+			align-items: end;
+			justify-content: end;
+			display: flex;
+			@include adaptiveValue("gap", 30, 10);
+			@media (max-width: $mobile) {
+				justify-content: center;
+			}
+		}
+	}
+	// .block-img__image-ibg
+	&__image-ibg {
+		img {
+		}
+		// padding-bottom: 40%;
+		&--wide {
+			padding-bottom: 50%;
+			max-width: toRem(470);
+			@media (max-width: $mobile) {
+				padding-bottom: 50%;
+				flex: 1 1 50%;
+				max-width: 100%;
+			}
+
+			img {
+				object-position: 50% 85%;
+			}
+		}
+		&--mini {
+			align-self: start;
+			flex: 1 0 30%;
+			padding-bottom: 20%;
+			max-width: toRem(140);
+			img {
+				object-position: 50% 80%;
+			}
+			@media (max-width: $mobile) {
+				flex: 1 1 50%;
+				padding-bottom: 35%;
+				max-width: 50%;
+			}
+		}
+		&--big {
+			flex: 1 1 50%;
+			padding-bottom: 43%;
+			max-width: toRem(270);
+			img {
+				object-position: 50% 65%;
+			}
+			@media (max-width: $mobile) {
+				padding-bottom: 35%;
+				flex: 1 1 50%;
+				max-width: 50%;
+			}
+		}
+	}
+}
+.block-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	@media (max-width: $tablet) {
+		justify-content: start;
+	}
+
+	// .block-body__item
+	&__item {
+		// .block-body__item--top
+		&--top {
+			align-self: start;
+		}
+		// .block-body__item--bot
+		&--bot {
+			align-self: end;
+		}
+	}
+	// .block-body__title
+	&__title {
+		font-weight: 500;
+		@include adaptiveValue("font-size", 34, 22);
+		line-height: 129%;
+		max-width: toRem(360);
+		span {
+			@include adaptiveValue("font-size", 20, 16);
+		}
+		@include adaptiveValue("margin-bottom", 37, 15);
+	}
+	// .block-body__text
+	&__text {
+		@include adaptiveValue("font-size", 18, 16);
+		line-height: 159%;
+		@include adaptiveValue("margin-bottom", 57, 20);
+		max-width: toRem(440);
+		p {
+			&:not(:last-child) {
+				margin-bottom: toRem(20);
+			}
+		}
+	}
+	// .block-body__button
+	&__button {
+	}
+}
+//============================================6
