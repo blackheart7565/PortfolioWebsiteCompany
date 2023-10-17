@@ -17,6 +17,7 @@ import {
 	EffectFlip,
 	Navigation,
 	Pagination,
+	Scrollbar,
 } from 'swiper/modules'
 
 /*
