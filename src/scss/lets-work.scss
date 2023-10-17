@@ -1,0 +1,76 @@
+.lets-work {
+	// .lets-work__container
+	&__container {
+		position: relative;
+	}
+	// .lets-work__content
+	&__content {
+		display: flex;
+		// align-items: stretch;
+		// justify-content: start;
+		@media (max-width: $mobile) {
+			flex-direction: column;
+		}
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			@include adaptiveValue("height", 46, 26);
+			@include adaptiveValue("width", 62, 42);
+			top: 20%;
+			right: 0%;
+			background: url("@img/lets-work/arrow.svg") center / contain no-repeat;
+			@media (max-width: $mobile) {
+				top: 50%;
+			}
+		}
+	}
+	// .lets-work__title
+	&__title {
+		// background-color: rgba(0, 0, 0, 0.204);
+		// align-self: stretch;
+		font-weight: 500;
+		@include adaptiveValue("font-size", 100, 38);
+		line-height: 116%;
+		color: #0e0e0e;
+		flex: 0 1 483px;
+		position: relative;
+		z-index: 1;
+		@media (max-width: $mobile) {
+			flex: 0 0 0;
+		}
+		span {
+			position: relative;
+			&::before {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: toRem(2);
+				bottom: 10%;
+				left: 0;
+				background: #000;
+			}
+		}
+	}
+	// .lets-work__image-ibg
+	&__image-ibg {
+		padding-bottom: 260px;
+		flex: 0 0 230px;
+		transform: translate(-40px, -70px);
+		@media (max-width: $mobile) {
+			position: relative;
+			left: 50%;
+			transform: translate(-60%, -50px);
+			max-width: toRem(180);
+			padding-bottom: toRem(0);
+			flex: 0 0 210px;
+		}
+		// position: absolute;
+		// top: 0;
+		// left: 50%;
+		// width: 230px;
+		// height: 270px;
+		img {
+		}
+	}
+}

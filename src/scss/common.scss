@@ -10,21 +10,27 @@
 	// .page__services
 	&__services {
 		@include adaptiveValue("padding-top", 80, 30);
-		@include adaptiveValue("padding-bottom", 250, 250);
+		@include adaptiveValue("padding-bottom", 70, 30);
 	}
 	// .page__featured-work
 	&__featured-work {
+		@include adaptiveValue("padding-top", 70, 30);
+		@include adaptiveValue("padding-bottom", 157, 30);
 	}
 	// .page__work-process
 	&__work-process {
+		@include adaptiveValue("padding-top", 150, 30);
+		@include adaptiveValue("padding-bottom", 150, 30);
 	}
 	// .page__we-create
 	&__we-create {
-		@include adaptiveValue("padding-top", 80, 30);
-		@include adaptiveValue("padding-bottom", 250, 250);
+		@include adaptiveValue("padding-top", 160, 30);
+		@include adaptiveValue("padding-bottom", 80, 30);
 	}
 	// .page__values
 	&__values {
+		@include adaptiveValue("padding-top", 80, 30);
+		@include adaptiveValue("padding-bottom", 80, 30);
 	}
 	// .page__articles
 	&__articles {
@@ -37,6 +43,8 @@
 	}
 	// .page__lets-work
 	&__lets-work {
+		@include adaptiveValue("padding-top", 150, 60);
+		@include adaptiveValue("padding-bottom", 80, 30);
 	}
 }
 //===========
