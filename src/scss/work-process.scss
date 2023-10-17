@@ -6,9 +6,31 @@
 	justify-content: center;
 	align-items: center;
 	background: #0e0e0e;
+	position: relative;
 
 	// .work-process__container
 	&__container {
+		position: relative;
+		z-index: 21;
+	}
+	// .work-process__images
+	&__images {
+		position: absolute;
+		right: 15%;
+		transform: translate(0, -50%);
+		z-index: 20;
+		@include adaptiveValue('top', 340, 330);
+		@include adaptiveValue('height', 212, 100);
+		@include adaptiveValue('width', 212, 100);
+
+		@media (max-width: $tablet) {
+			opacity: 0.5;
+		}
+	}
+	// .work-process__img
+	&__img {
+		height: 100%;
+		width: 100%;
 	}
 	// .work-process__title
 	&__title {
