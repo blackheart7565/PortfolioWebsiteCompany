@@ -27,16 +27,30 @@ $white: #fff;
 	// .header__top
 	&__top {
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
-		@include adaptiveValue('height', 38, 25);
 		width: 100%;
+		@include adaptiveValue('height', 90, 70);
 		padding-left: math.div($containerPadding, 2) + px;
 		padding-right: math.div($containerPadding, 2) + px;
 		position: absolute;
-		top: 26px;
+		top: 0;
 		left: 0;
 		z-index: 600;
+	}
+	.header-top-scroll {
+		position: fixed;
+		background: #0e0e0ee5;
+		backdrop-filter: blur(2px);
+	}
+	// .header__top-wrapper
+	&__top-wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		max-width: 1170px;
+		margin: 0 auto;
+		@include adaptiveValue('height', 38, 25);
 	}
 	// .header__top-left
 	&__top-left {

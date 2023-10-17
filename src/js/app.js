@@ -246,6 +246,7 @@ import './files/sliders.js'
 // ========================================================================================================================================================================================================================================================
 /* Подключаем файлы со своим кодом */
 import './files/script.js'
+import { HeaderTopScroll } from './modules/headerTopScroll.js'
 import { activeMenuBurger } from './modules/menuBurger.js'
 import { Tabs } from './modules/tabs.js'
 
@@ -259,3 +260,5 @@ activeMenuBurger(document.getElementById('menu-burger'), 'menu-burger-active', {
 	btnOpenSelector: 'menu-burger-open',
 	btnCloseSelector: 'menu-burger-close',
 }).init()
+
+new HeaderTopScroll()
