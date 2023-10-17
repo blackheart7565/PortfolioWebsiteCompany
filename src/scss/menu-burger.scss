@@ -1,0 +1,137 @@
+//~~
+
+.menu__blocked-scroll-content {
+	overflow: hidden;
+}
+
+.menu-burger {
+	$self: &;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	width: 50%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	transition: transform 0.3s ease-in-out;
+	transform: translateX(100%);
+	background: #000000d2;
+	backdrop-filter: blur(10px);
+
+	@media (max-width: $mobileSmall) {
+		width: 100%;
+	}
+
+	&-active {
+		transform: translateX(0);
+	}
+
+	// .menu-burger__btn-open
+	&__btn-open {
+		display: none;
+		height: 30px;
+		width: 30px;
+		border-radius: 10%;
+		position: relative;
+
+		& span,
+		& span::after,
+		& span::before {
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			background: #fff;
+		}
+		& span::after,
+		& span::before {
+			content: '';
+			top: 0;
+		}
+		& span {
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+		}
+		& span::before {
+			width: 80%;
+			right: 0;
+			transform: translateY(-7px);
+		}
+		& span::after {
+			width: 60%;
+			right: 0;
+			transform: translateY(7px);
+		}
+
+		@media (max-width: $mobile) {
+			display: block;
+		}
+	}
+	// .menu-burger__btn-close
+	&__btn-close {
+		height: 40px;
+		width: 40px;
+		// background: #352f2f;
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		z-index: 1001;
+		transition: transform 0.5s ease-in-out;
+		transform: translateX(300%) rotate(360deg);
+
+		& span {
+			width: 100%;
+			height: 0;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			background: #fff;
+
+			&::before,
+			&::after {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 2px;
+				top: 0;
+				left: 50%;
+				background: #fff;
+				border-radius: 50px;
+			}
+			&::before {
+				width: 70%;
+				transform: translateX(-50%) rotate(-45deg);
+			}
+			&::after {
+				width: 70%;
+				transform: translateX(-50%) rotate(45deg);
+			}
+		}
+
+		#{$self}-active & {
+			transform: translateX(0) rotate(0);
+		}
+	}
+	// .menu-burger__list
+	&__list {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		margin-top: 30%;
+		padding-right: 30px;
+		padding-bottom: 20px;
+		gap: 30px;
+		overflow: auto;
+	}
+	// .menu-burger__item
+	&__item {
+	}
+	// .menu-burger__link
+	&__link {
+		color: #fff;
+		font-size: 30px;
+	}
+}

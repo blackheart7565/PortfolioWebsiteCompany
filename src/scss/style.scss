@@ -79,6 +79,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
+
 	@supports (overflow: clip) {
 		overflow: clip;
 	}
@@ -151,6 +152,7 @@ body {
 @import "common";
 
 // Подключение стилей отдельных блоков
+
 @import "header";
 @import "footer";
 

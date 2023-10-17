@@ -4,54 +4,59 @@
 
 	// .page__who-we
 	&__who-we {
-		@include adaptiveValue("padding-top", 150, 60);
-		@include adaptiveValue("padding-bottom", 80, 30);
+		@include adaptiveValue('padding-top', 150, 60);
+		@include adaptiveValue('padding-bottom', 80, 30);
 	}
 	// .page__services
 	&__services {
-		@include adaptiveValue("padding-top", 80, 30);
-		@include adaptiveValue("padding-bottom", 70, 30);
+		@include adaptiveValue('padding-top', 80, 30);
+		@include adaptiveValue('padding-bottom', 70, 30);
 	}
 	// .page__featured-work
 	&__featured-work {
-		@include adaptiveValue("padding-top", 70, 30);
-		@include adaptiveValue("padding-bottom", 157, 30);
+		@include adaptiveValue('padding-top', 70, 30);
+		@include adaptiveValue('padding-bottom', 157, 30);
 	}
 	// .page__work-process
 	&__work-process {
-		@include adaptiveValue("padding-top", 150, 30);
-		@include adaptiveValue("padding-bottom", 150, 30);
+		@include adaptiveValue('padding-top', 150, 30);
+		@include adaptiveValue('padding-bottom', 150, 30);
 	}
 	// .page__we-create
 	&__we-create {
-		@include adaptiveValue("padding-top", 160, 30);
-		@include adaptiveValue("padding-bottom", 80, 30);
+		@include adaptiveValue('padding-top', 160, 30);
+		@include adaptiveValue('padding-bottom', 80, 30);
 	}
 	// .page__values
 	&__values {
-		@include adaptiveValue("padding-top", 80, 30);
-		@include adaptiveValue("padding-bottom", 80, 30);
+		@include adaptiveValue('padding-top', 80, 30);
+		@include adaptiveValue('padding-bottom', 80, 30);
 	}
 	// .page__articles
 	&__articles {
+		//---------------------------------
 	}
 	// .page__brands
 	&__brands {
+		@include adaptiveValue('padding-top', 156, 70);
+		@include adaptiveValue('padding-bottom', 78, 60);
 	}
 	// .page__whats-new
 	&__whats-new {
+		@include adaptiveValue('padding-top', 77, 30);
+		@include adaptiveValue('padding-bottom', 80, 50);
 	}
 	// .page__lets-work
 	&__lets-work {
-		@include adaptiveValue("padding-top", 150, 60);
-		@include adaptiveValue("padding-bottom", 80, 30);
+		@include adaptiveValue('padding-top', 150, 60);
+		@include adaptiveValue('padding-bottom', 80, 30);
 	}
 }
 //===========
 .sharpe {
 	position: absolute;
-	@include adaptiveValue("width", 641, 400);
-	@include adaptiveValue("height", 641, 400);
+	@include adaptiveValue('width', 641, 400);
+	@include adaptiveValue('height', 641, 400);
 	border-radius: 50%;
 	z-index: -1;
 	//-----
