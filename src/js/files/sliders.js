@@ -173,11 +173,13 @@ function initSliders() {
 		// Створюємо слайдер
 		// Вказуємо склас потрібного слайдера
 		new Swiper('.vSwiper', {
+			// direction: 'horizontal',
 			direction: 'vertical',
 			grabCursor: true,
 			slidesPerView: 1,
 			spaceBetween: 0,
 			speed: 800,
+			autoHeight: true,
 			// loop: true,
 			// effect: 'fade',
 			// fadeEffect: {
@@ -285,9 +287,8 @@ function initSliders() {
 			// Брейкпоінти
 			breakpoints: {
 				640: {
-					slidesPerView: 1,
-					spaceBetween: 0,
-					autoHeight: true,
+					direction: 'vertical',
+					effect: 'creative',
 				},
 				768: {
 					slidesPerView: 2,

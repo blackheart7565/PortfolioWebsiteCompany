@@ -1,10 +1,8 @@
 // Заголовки, общие БЄМ блоки и проче...
 .page {
-	// background: #1d7a0a;
-
 	// .page__who-we
 	&__who-we {
-		@include adaptiveValue('padding-top', 150, 60);
+		@include adaptiveValue('padding-top', 154, 60);
 		@include adaptiveValue('padding-bottom', 80, 30);
 	}
 	// .page__services
@@ -25,12 +23,12 @@
 	// .page__we-create
 	&__we-create {
 		@include adaptiveValue('padding-top', 160, 30);
-		@include adaptiveValue('padding-bottom', 80, 30);
+		@include adaptiveValue('padding-bottom', 70, 30);
 	}
 	// .page__values
 	&__values {
-		@include adaptiveValue('padding-top', 80, 30);
-		@include adaptiveValue('padding-bottom', 80, 30);
+		@include adaptiveValue('padding-top', 70, 30);
+		@include adaptiveValue('padding-bottom', 130, 30);
 	}
 	// .page__articles
 	&__articles {
@@ -48,8 +46,8 @@
 	}
 	// .page__lets-work
 	&__lets-work {
-		@include adaptiveValue('padding-top', 150, 60);
-		@include adaptiveValue('padding-bottom', 80, 30);
+		@include adaptiveValue('padding-top', 80, 60);
+		@include adaptiveValue('padding-bottom', 158, 30);
 	}
 }
 //===========
