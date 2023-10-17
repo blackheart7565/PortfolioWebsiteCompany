@@ -7,7 +7,19 @@
 	align-items: center;
 	background: #0e0e0e;
 	position: relative;
+	overflow: hidden;
 
+	// .work-process__sharpe
+	&__sharpe {
+		background: #202020;
+		z-index: 20;
+		@include adaptiveValue('top', -300, -100);
+		@include adaptiveValue('right', -100, -200);
+
+		@media (max-width: $mobile) {
+			opacity: 0.5;
+		}
+	}
 	// .work-process__container
 	&__container {
 		position: relative;
