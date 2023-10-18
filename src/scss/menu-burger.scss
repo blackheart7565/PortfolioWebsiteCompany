@@ -46,7 +46,7 @@
 		}
 		& span::after,
 		& span::before {
-			content: '';
+			content: "";
 			top: 0;
 		}
 		& span {
@@ -92,7 +92,7 @@
 
 			&::before,
 			&::after {
-				content: '';
+				content: "";
 				position: absolute;
 				width: 100%;
 				height: 2px;
@@ -120,7 +120,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-end;
-		margin-top: 30%;
+		padding-top: toRem(130);
 		padding-right: 30px;
 		padding-bottom: 20px;
 		gap: 30px;

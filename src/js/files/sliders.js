@@ -179,7 +179,7 @@ function initSliders() {
 			slidesPerView: 1,
 			spaceBetween: 0,
 			speed: 800,
-			autoHeight: true,
+			// autoHeight: true,
 			// loop: true,
 			// effect: 'fade',
 			// fadeEffect: {
@@ -340,7 +340,7 @@ function initSliders() {
 			// },
 			observer: true,
 			observeParents: true,
-			//autoHeight: true,
+			autoHeight: true,
 			// touchRatio: 0,
 			// simulateTouch: false,
 			// preloadImages: false,

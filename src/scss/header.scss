@@ -16,7 +16,7 @@ $white: #fff;
 		height: 100%;
 		position: absolute;
 		left: 0;
-		@include adaptiveValue('bottom', 100, 50);
+		@include adaptiveValue("bottom", 100, 50);
 		background-color: $bg-header-color;
 	}
 	// .header__container
@@ -29,7 +29,7 @@ $white: #fff;
 		display: flex;
 		align-items: center;
 		width: 100%;
-		@include adaptiveValue('height', 90, 70);
+		@include adaptiveValue("height", 90, 70);
 		padding-left: math.div($containerPadding, 2) + px;
 		padding-right: math.div($containerPadding, 2) + px;
 		position: absolute;
@@ -50,7 +50,7 @@ $white: #fff;
 		width: 100%;
 		max-width: 1170px;
 		margin: 0 auto;
-		@include adaptiveValue('height', 38, 25);
+		@include adaptiveValue("height", 38, 25);
 	}
 	// .header__top-left
 	&__top-left {
@@ -156,7 +156,7 @@ $white: #fff;
 	&__bottom {
 		width: 100%;
 		height: 100%;
-		@include adaptiveValue('padding-top', 90, 70);
+		@include adaptiveValue("padding-top", 90, 70);
 	}
 	// .header__swiper
 	&__swiper {
@@ -170,7 +170,7 @@ $white: #fff;
 	}
 	// .header__swiper-slide-imges
 	&__swiper-slide-imges {
-		@include adaptiveValue('height', 580, 150);
+		@include adaptiveValue("height", 580, 150);
 	}
 	// .header__swiper-slide-img
 	&__swiper-slide-img {
@@ -186,18 +186,19 @@ $white: #fff;
 	}
 	// .header__swiper-slide-title
 	&__swiper-slide-title {
-		@include adaptiveValue('top', 211, 45);
-		@include adaptiveValue('left', 200, 40);
-		@include adaptiveValue('font-size', 70, 20);
+		@include adaptiveValue("top", 211, 45);
+		@include adaptiveValue("left", 200, 40);
+		@include adaptiveValue("font-size", 70, 20);
 		color: $white;
+		text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 
 		&:before {
-			content: '';
+			content: "";
 			height: 2px;
 			width: 70px;
 			position: absolute;
-			@include adaptiveValue('top', -36, -7);
-			@include adaptiveValue('width', 70, 18);
+			@include adaptiveValue("top", -36, -7);
+			@include adaptiveValue("width", 70, 18);
 			left: 0;
 			background: $white;
 		}
@@ -207,11 +208,11 @@ $white: #fff;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		@include adaptiveValue('bottom', 100, 15);
-		@include adaptiveValue('right', 178, 25);
-		@include adaptiveValue('width', 90, 50);
-		@include adaptiveValue('height', 90, 50);
-		@include adaptiveValue('font-size', 15, 12);
+		@include adaptiveValue("bottom", 100, 15);
+		@include adaptiveValue("right", 178, 25);
+		@include adaptiveValue("width", 90, 50);
+		@include adaptiveValue("height", 90, 50);
+		@include adaptiveValue("font-size", 15, 12);
 		background: $white;
 		border-radius: 50%;
 	}
@@ -225,7 +226,6 @@ $white: #fff;
 	&__swiper-button-next {
 	}
 }
-
 .swiper {
 	width: 100%;
 	height: 100%;
@@ -235,19 +235,22 @@ $white: #fff;
 .swiper-pagination {
 }
 .swiper > .swiper-pagination-bullets.swiper-pagination-horizontal {
-	@include adaptiveValue('bottom', 50, 10);
-	@include adaptiveValue('left', 200, 30);
+	@include adaptiveValue("bottom", 50, 10);
+	@include adaptiveValue("left", 200, 30);
 	width: initial;
 }
 .swiper-button-next,
 .swiper-button-prev {
 	top: 50% !important;
+
 	transform: translateY(10px);
 	margin-top: 0 !important;
-
+	width: toRem(40) !important;
+	height: toRem(40) !important;
+	background: #0e0e0e;
+	border-radius: 50%;
 	&::after {
 		@media (max-width: $tablet) {
-			font-size: toRem(35) !important;
 		}
 	}
 	@media (max-width: 750px) {
@@ -255,12 +258,28 @@ $white: #fff;
 	}
 }
 .swiper-button-prev {
+	&::after {
+		content: "" !important;
+		background: url("@img/header/slide-arrow-right.svg") 0 0 / contain no-repeat;
+		width: toRem(20.5);
+		height: toRem(11);
+		transform: rotate(-180deg);
+	}
+	left: 25px !important;
 	@media (max-width: $tablet) {
 		left: 25px !important;
 	}
 }
 .swiper-button-next {
+	right: 25px !important;
 	@media (max-width: $tablet) {
 		right: 25px !important;
+	}
+	&::after {
+		content: "" !important;
+		background: url("@img/header/slide-arrow-right.svg") 0 0 / contain no-repeat;
+		width: toRem(20.5);
+		height: toRem(11);
+		// transform: rotate(-180deg);
 	}
 }

@@ -37,10 +37,10 @@
 			width: 70px;
 			height: 1px;
 			background: #0e0e0e;
-			@include adaptiveValue('margin-top', 66, 40);
+			@include adaptiveValue("margin-top", 66, 40);
 
 			@media (max-width: $mobile) {
-				@include adaptiveValue('margin-top', 66, 20);
+				@include adaptiveValue("margin-top", 66, 20);
 			}
 		}
 
@@ -51,8 +51,8 @@
 	}
 	// .featured-work__header-title
 	&__header-title {
-		@include adaptiveValue('font-size', 100, 35);
-		@include adaptiveValue('width', 425, 200);
+		@include adaptiveValue("font-size", 100, 35);
+		@include adaptiveValue("width", 425, 200);
 
 		@media (max-width: $mobile) {
 			width: 100%;
@@ -61,7 +61,7 @@
 	}
 	// .featured-work__header-button
 	&__header-button {
-		@include adaptiveValue('margin-top', 40, 20);
+		@include adaptiveValue("margin-top", 40, 20);
 	}
 	// .featured-work__content
 	&__content {
@@ -79,7 +79,9 @@
 		justify-content: space-between;
 		gap: 30px;
 		height: 100%;
-
+		@media (max-width: toRem(1060.98)) {
+			justify-content: center;
+		}
 		@media (max-width: $mobile) {
 			flex-direction: column;
 			align-items: center;
@@ -92,7 +94,9 @@
 		gap: 30px;
 		height: 100%;
 		align-items: flex-end;
-
+		@media (max-width: toRem(1060.98)) {
+			justify-content: center;
+		}
 		@media (max-width: $mobile) {
 			flex-direction: column;
 			align-items: center;
@@ -103,9 +107,9 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		@include adaptiveValue('width', 90, 60);
-		@include adaptiveValue('height', 90, 60);
-		@include adaptiveValue('font-size', 15, 13);
+		@include adaptiveValue("width", 90, 60);
+		@include adaptiveValue("height", 90, 60);
+		@include adaptiveValue("font-size", 15, 13);
 		position: absolute;
 		bottom: 30%;
 		left: 10%;
@@ -123,7 +127,7 @@
 		z-index: 29;
 
 		&:hover #{$self}__images img {
-			transform: scale(1.1);
+			transform: scale(1.06);
 		}
 		&:hover #{$self}__images::before {
 			opacity: 0;
@@ -135,31 +139,52 @@
 	// .featured-work__content-item-small-1
 	&__content-item-small-1 {
 		position: relative;
-		@include adaptiveValue('width', 370, 300);
-		@include adaptiveValue('top', 160, 0);
-		@include adaptiveValue('left', 100, 0);
+		@include adaptiveValue("width", 370, 300);
+		@include adaptiveValue("top", 160, 0, 0, 1366, 1060);
+		@include adaptiveValue("left", 100, 0, 0, 1366, 1060);
 
-		@media (max-width: em(1060)) {
-			top: 0;
-			left: 0;
+		// @media (max-width: em(1060)) {
+		// 	top: 0;
+		// }
+		@media (max-width: $mobile) {
+			align-self: start;
+			transform: translate(25%, 0px);
+			top: 0 !important;
 		}
 		@media (max-width: $mobileSmall) {
 			width: 100%;
+			align-self: center;
+			transform: translate(0%, 0px);
 		}
 	}
 	// .featured-work__content-item-small-2
 	&__content-item-small-2 {
 		position: relative;
-		@include adaptiveValue('width', 370, 200);
-		@include adaptiveValue('bottom', 160, 0);
-		@include adaptiveValue('right', 100, 0);
+		@include adaptiveValue("width", 370, 200);
+		@include adaptiveValue("bottom", 160, 0);
+		@include adaptiveValue("right", 100, 0);
 
 		@media (max-width: em(1060)) {
 			top: 0;
 			left: 0;
 		}
+		@media (max-width: $mobile) {
+			transform: translate(-25%, 0px);
+			align-self: end;
+		}
 		@media (max-width: $mobileSmall) {
 			width: 100%;
+			align-self: center;
+			transform: translate(0%, 0px);
+			img {
+				object-position: top;
+			}
+		}
+
+		@media (min-width: $tablet) {
+			img {
+				object-position: top;
+			}
 		}
 	}
 	// .featured-work__content-item-big-1
@@ -170,13 +195,12 @@
 	}
 	// .featured-work__images
 	&__images {
-		@include adaptiveValue('height', 428, 300);
+		@include adaptiveValue("height", 428, 300);
 		overflow: hidden;
 		position: relative;
 		z-index: 30;
-
 		&::before {
-			content: '';
+			content: "";
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -187,6 +211,9 @@
 			opacity: 1;
 			backdrop-filter: blur(3px);
 			transition: opacity 0.4s ease-in-out;
+			@media (max-width: $tablet) {
+				backdrop-filter: blur(0px);
+			}
 		}
 	}
 	// .featured-work__img

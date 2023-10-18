@@ -2,9 +2,9 @@
 
 .articles {
 	background: #0e0e0e;
-	// @include adaptiveValue('height', 700, 600);
-	padding-bottom: 30px;
-	padding-top: 30px;
+	@include adaptiveValue("height", 500, 300);
+	padding-bottom: 60px;
+	padding-top: 60px;
 
 	// .articles__container
 	&__container {
@@ -44,7 +44,7 @@
 	}
 	// .articles__slide-text
 	&__slide-text {
-		@include adaptiveValue('font-size', 24, 14);
+		@include adaptiveValue("font-size", 24, 14);
 		color: #fff;
 		text-align: center;
 		padding: 20px;
@@ -53,26 +53,26 @@
 		& > p {
 			// max-height: 250px;
 			// overflow: hidden;
-			@include adaptiveValue('line-height', 40, 30);
+			@include adaptiveValue("line-height", 40, 30);
 		}
 
 		&::before {
-			content: '';
+			content: "";
 			height: 1px;
 			background: #fff;
 			position: absolute;
-			@include adaptiveValue('width', 160, 90);
-			@include adaptiveValue('top', -90, -10);
-			@include adaptiveValue('left', -145, 10);
+			@include adaptiveValue("width", 160, 90);
+			@include adaptiveValue("top", -90, -10);
+			@include adaptiveValue("left", -145, 10);
 		}
 		&::after {
-			content: '';
+			content: "";
 			position: absolute;
 			width: 1px;
 			background: #fff;
-			@include adaptiveValue('height', 70, 45);
-			@include adaptiveValue('bottom', -70, -40);
-			@include adaptiveValue('right', -10, 20);
+			@include adaptiveValue("height", 70, 45);
+			@include adaptiveValue("bottom", -70, -40);
+			@include adaptiveValue("right", -10, 20);
 		}
 	}
 	// .articles__slide-subtitle
