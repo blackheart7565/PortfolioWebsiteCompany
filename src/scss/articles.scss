@@ -2,9 +2,9 @@
 
 .articles {
 	background: #0e0e0e;
-	@include adaptiveValue("height", 500, 300);
-	padding-bottom: 60px;
-	padding-top: 60px;
+	@include adaptiveValue("height", 600, 500);
+	padding-bottom: 40px;
+	padding-top: 40px;
 
 	// .articles__container
 	&__container {
