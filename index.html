@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Home</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240210173554">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__bg"></div>
+			<div class="header__container">
+				<div class="header__top" data-scroll-top='header-top-scroll'>
+					<div class="header__top-wrapper">
+						<div class="header__top-left">
+							<a class="header__logo" href='/'>
+								<h2 class='header__logo-text'>Themebau.</h2>
+							</a>
+						</div>
+						<div class="header__top-right">
+							<nav class="header__nav">
+								<ul class="header__list">
+									<li class="header__item">
+										<a class="header__link" href="#">home</a>
+									</li>
+									<li class="header__item">
+										<a class="header__link" href="#">projects</a>
+									</li>
+									<li class="header__item">
+										<a class="header__link" href="#">pages</a>
+									</li>
+									<li class="header__item">
+										<a class="header__link" href="#">contact</a>
+									</li>
+								</ul>
+							</nav>
+							<div class="header__social">
+								<a class="header__facebook" href='https://www.facebook.com/' target='_blank'>
+									<svg class="header__facebook-ico" xmlns="http://www.w3.org/2000/svg" width="7" height="15" viewBox="0 0 7 15" fill="none">
+										<path d="M5.72197 2.49023H7V0.105469C6.77992 0.0732422 6.02159 0 5.13864 0C3.29583 0 2.03371 1.24219 2.03371 3.52441V5.625H0V8.29102H2.03371V15H4.52614V8.29102H6.47765L6.78788 5.625H4.52614V3.78809C4.52614 3.01758 4.7197 2.49023 5.72197 2.49023Z" fill="white" />
+									</svg>
+								</a>
+								<a class="header__twitter" href='https://twitter.com/?lang=ru' target='_blank'>
+									<svg class="header__twitter-ico" xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14" fill="none">
+										<path d="M15.2493 3.44097C15.2601 3.59198 15.2601 3.74302 15.2601 3.89403C15.2601 8.49997 11.7547 13.8071 5.34785 13.8071C3.37402 13.8071 1.54044 13.2354 -0.00195312 12.243C0.27849 12.2754 0.54811 12.2862 0.839343 12.2862C2.46799 12.2862 3.96725 11.736 5.16448 10.7976C3.63289 10.7652 2.34936 9.76205 1.90713 8.38133C2.12287 8.41367 2.33857 8.43526 2.5651 8.43526C2.87788 8.43526 3.19069 8.39209 3.48189 8.31662C1.88559 7.99299 0.688315 6.59072 0.688315 4.8972V4.85407C1.15209 5.11295 1.69143 5.27475 2.26304 5.2963C1.32467 4.67065 0.709895 3.60277 0.709895 2.39464C0.709895 1.74745 0.882438 1.15417 1.18446 0.636404C2.89942 2.75061 5.47726 4.1313 8.36785 4.28234C8.31394 4.02346 8.28156 3.75381 8.28156 3.48414C8.28156 1.56407 9.83474 0 11.7654 0C12.7685 0 13.6745 0.420684 14.3109 1.10025C15.0982 0.949244 15.8532 0.657987 16.522 0.258885C16.2631 1.06791 15.713 1.74748 14.9904 2.17892C15.6915 2.10345 16.371 1.90925 16.9966 1.6396C16.5221 2.32993 15.9288 2.94475 15.2493 3.44097Z" fill="white" />
+									</svg>
+								</a>
+								<a class="header__instagram" href='https://www.instagram.com/' target='_blank'>
+									<svg class="header__instagram-ico" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+										<defs>
+											<linearGradient id="myGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+												<stop offset="0%" stop-color="#f58529" />
+												<stop offset="20%" stop-color="#dd2a7b" />
+												<stop offset="40%" stop-color="#8134af" />
+												<stop offset="60%" stop-color="#515bd4" />
+												<stop offset="80%" stop-color="#0099e5" />
+											</linearGradient>
+										</defs>
+										<path d="M7.49839 3.62495C5.36911 3.62495 3.65162 5.32827 3.65162 7.43999C3.65162 9.55171 5.36911 11.255 7.49839 11.255C9.62768 11.255 11.3452 9.55171 11.3452 7.43999C11.3452 5.32827 9.62768 3.62495 7.49839 3.62495ZM7.49839 9.92026C6.12239 9.92026 4.99749 8.80796 4.99749 7.43999C4.99749 6.07202 6.11905 4.95972 7.49839 4.95972C8.87774 4.95972 9.9993 6.07202 9.9993 7.43999C9.9993 8.80796 8.8744 9.92026 7.49839 9.92026ZM12.3998 3.4689C12.3998 3.96362 11.998 4.35874 11.5025 4.35874C11.0037 4.35874 10.6053 3.9603 10.6053 3.4689C10.6053 2.97749 11.007 2.57905 11.5025 2.57905C11.998 2.57905 12.3998 2.97749 12.3998 3.4689ZM14.9475 4.37202C14.8906 3.18003 14.6161 2.12417 13.7356 1.25425C12.8584 0.384326 11.7938 0.112061 10.5919 0.0522949C9.35315 -0.0174316 5.64029 -0.0174316 4.40156 0.0522949C3.203 0.10874 2.13835 0.381006 1.25785 1.25093C0.37734 2.12085 0.106157 3.17671 0.045894 4.3687C-0.0244126 5.59722 -0.0244126 9.27944 0.045894 10.508C0.102809 11.7 0.37734 12.7558 1.25785 13.6257C2.13835 14.4957 3.19965 14.7679 4.40156 14.8277C5.64029 14.8974 9.35315 14.8974 10.5919 14.8277C11.7938 14.7712 12.8584 14.499 13.7356 13.6257C14.6128 12.7558 14.8873 11.7 14.9475 10.508C15.0179 9.27944 15.0179 5.60054 14.9475 4.37202ZM13.3472 11.8261C13.0861 12.4769 12.5806 12.9783 11.921 13.2406C10.9334 13.6291 8.58982 13.5394 7.49839 13.5394C6.40697 13.5394 4.06007 13.6257 3.07577 13.2406C2.41958 12.9816 1.91404 12.4802 1.64955 11.8261C1.25785 10.8466 1.34824 8.52241 1.34824 7.43999C1.34824 6.35757 1.26119 4.03003 1.64955 3.05386C1.91069 2.40308 2.41623 1.90171 3.07577 1.6394C4.06341 1.25093 6.40697 1.34058 7.49839 1.34058C8.58982 1.34058 10.9367 1.25425 11.921 1.6394C12.5772 1.89839 13.0827 2.39976 13.3472 3.05386C13.7389 4.03335 13.6485 6.35757 13.6485 7.43999C13.6485 8.52241 13.7389 10.85 13.3472 11.8261Z" fill="white" />
+									</svg>
+								</a>
+							</div>
+							<button class='menu-burger__btn-open' id='menu-burger-open'>
+								<span></span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="header__bottom">
+					<div class="header__swiper swiper">
+						<div class="header__swiper-wrapper swiper-wrapper">
+							<!-- // Slide 1 -->
+							<div class="header__swiper-slide swiper-slide">
+								<div class="header__swiper-slide-imges">
+									<picture><source srcset="img/header/anime/1.webp" type="image/webp"><img class="header__swiper-slide-img" src="img/header/anime/1.jpg" alt="slide-image"></picture>
+								</div>
+								<h1 class="header__swiper-slide-title">Colibri Creative <br> Project</h1>
+								<a class="header__swiper-slide-btn" href='#'>view</a>
+							</div>
+							<!-- // Slide 2 -->
+							<div class="header__swiper-slide swiper-slide">
+								<div class="header__swiper-slide-imges">
+									<picture><source srcset="img/header/anime/2.webp" type="image/webp"><img class="header__swiper-slide-img" src="img/header/anime/2.jpg" alt="slide-image"></picture>
+								</div>
+								<h1 class="header__swiper-slide-title">Colibri Creative <br> Project</h1>
+								<a class="header__swiper-slide-btn" href='#'>view</a>
+							</div>
+							<!-- // Slide 3 -->
+							<div class="header__swiper-slide swiper-slide">
+								<div class="header__swiper-slide-imges">
+									<picture><source srcset="img/header/anime/3.webp" type="image/webp"><img class="header__swiper-slide-img" style="object-position: 0 0 !important;" src="img/header/anime/3.jpg" alt="slide-image"></picture>
+								</div>
+								<h1 class="header__swiper-slide-title">Colibri Creative <br> Project</h1>
+								<a class="header__swiper-slide-btn" href='#'>view</a>
+							</div>
+							<!-- End Slide -->
+						</div>
+						<div class="header__swiper-pagination swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+			<div class="header__swiper-button-prev swiper-button-prev"></div>
+			<div class="header__swiper-button-next swiper-button-next"></div>
+		</header>
+		<main class="page">
+			<!-- #region who-we -->
+			<section class="page__who-we who-we">
+				<div class="who-we__sharpe sharpe"></div>
+				<div class="who-we__container">
+					<div class="who-we__titles">
+						<div class="who-we__subtitle">who we are</div>
+						<h2 class="who-we__title">An award-winning design & dev team
+							that is proud of our work 👋</h2>
+					</div>
+					<div class="who-we__body">
+						<div class="who-we__item">
+							<p>Over 10 years of combined experience,
+								and know a thing or two about designing
+								websites and mobile apps.</p>
+						</div>
+						<div class="who-we__item">
+							<p>Were divided, a moved night light darkness winged may
+								also make man for. Winged the for Earth creeping appear
+								evening, gathered Forth so he. Life that dry of created
+								greater can't also gathered female green.</p>
+							<a href="#" class="who-we__button button button--b"><span>about us</span></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- #endregion -->
+			<!-- #region services  -->
+			<section class="page__services services">
+				<div class="services__container services__container--wide">
+					<div class="services__items">
+						<!--  -->
+						<a href="" class="services__column">
+							<div class="services__item item-services">
+								<div class="item-services__body">
+									<div class="item-services__icon">
+										<img src="img/Servuces/ico/1.svg" alt="">
+									</div>
+									<h3 class="item-services__title">Web Design and Development</h3>
+									<div class="item-services__action"><span>read more</span></div>
+								</div>
+								<div class="item-services__image">
+									<picture><source srcset="img/Servuces/5.webp" type="image/webp"><img src="img/Servuces/5.jpg" alt=""></picture>
+								</div>
+							</div>
+						</a>
+						<!--  -->
+						<a href="" class="services__column">
+							<div class="services__item item-services">
+								<div class="item-services__body">
+									<div class="item-services__icon">
+										<img src="img/Servuces/ico/2.svg" alt="">
+									</div>
+									<h3 class="item-services__title">Brand Strategy Accelerator</h3>
+									<div class="item-services__action"><span>read more</span></div>
+								</div>
+								<div class="item-services__image">
+									<picture><source srcset="img/Servuces/6.webp" type="image/webp"><img src="img/Servuces/6.jpg" alt=""></picture>
+								</div>
+							</div>
+
+						</a>
+						<!--  -->
+						<a href="" class="services__column">
+							<div class="services__item item-services">
+								<div class="item-services__body">
+									<div class="item-services__icon">
+										<img src="img/Servuces/ico/3.svg" alt="">
+									</div>
+									<h3 class="item-services__title">Packaging and Brand Identity</h3>
+									<div class="item-services__action"><span>read more</span></div>
+								</div>
+								<div class="item-services__image">
+									<picture><source srcset="img/Servuces/7.webp" type="image/webp"><img src="img/Servuces/7.jpg" alt=""></picture>
+								</div>
+							</div>
+						</a>
+						<!--  -->
+						<a href="" class="services__column">
+							<div class="services__item item-services">
+								<div class="item-services__body">
+									<div class="item-services__icon">
+										<img src="img/Servuces/ico/4.svg" alt="">
+									</div>
+									<h3 class="item-services__title">Content Production</h3>
+									<div class="item-services__action"><span>read more</span></div>
+								</div>
+								<div class="item-services__image">
+									<picture><source srcset="img/Servuces/8.webp" type="image/webp"><img src="img/Servuces/8.jpg" alt=""></picture>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+			<!-- #endregion -->
+			<!-- #region featured-work -->
+			<section class='page__featured-work featured-work'>
+				<div class="featured-work__container">
+					<div class="featured-work__header">
+						<h1 class='featured-work__header-title'>Featured work</h1>
+						<span></span>
+						<a class="featured-work__header-button button button--b" href="#"><span>about us</span></a>
+					</div>
+					<div class="featured-work__content">
+						<div class="featured-work__content-top">
+							<div class="featured-work__content-item featured-work__content-item-small-1">
+								<a class="featured-work__content-item-link" href="#">view</a>
+								<div class="featured-work__images">
+									<picture><source srcset="img/featured-work/anime/1.webp" type="image/webp"><img class="featured-work__img" src="img/featured-work/anime/1.jpg" alt="featured-work-img"></picture>
+								</div>
+								<h2 class="featured-work__title">Funny Dog</h2>
+								<p class="featured-work__description">photography</p>
+							</div>
+							<div class="featured-work__content-item  featured-work__content-item-big-1">
+								<a class="featured-work__content-item-link" href="#">view</a>
+								<div class="featured-work__images">
+									<picture><source srcset="img/featured-work/anime/2.webp" type="image/webp"><img class="featured-work__img" src="img/featured-work/anime/2.jpg" alt="featured-work-img"></picture>
+								</div>
+								<h2 class="featured-work__title">Creative Branding</h2>
+								<p class="featured-work__description">branding</p>
+							</div>
+						</div>
+						<div class="featured-work__content-bottom">
+							<div class="featured-work__content-item  featured-work__content-item-big-2">
+								<a class="featured-work__content-item-link" href="#">view</a>
+								<div class="featured-work__images">
+									<picture><source srcset="img/featured-work/anime/3.webp" type="image/webp"><img class="featured-work__img" src="img/featured-work/anime/3.jpg" alt="featured-work-img"></picture>
+								</div>
+								<h2 class="featured-work__title">Mobile App</h2>
+								<p class="featured-work__description">design</p>
+							</div>
+							<div class="featured-work__content-item featured-work__content-item-small-2">
+								<a class="featured-work__content-item-link" href="#">view</a>
+								<div class="featured-work__images">
+									<picture><source srcset="img/featured-work/anime/4.webp" type="image/webp"><img class="featured-work__img" src="img/featured-work/anime/4.jpg" alt="featured-work-img"></picture>
+								</div>
+								<h2 class="featured-work__title">Watch Design</h2>
+								<p class="featured-work__description">design</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- #endregion -->
+			<!-- #region work-process -->
+			<section class="page__work-process work-process">
+				<div class="work-process__sharpe sharpe"></div>
+				<div class="work-process__images">
+					<img class="work-process__img" src="img/work process/icon_1.png" alt="">
+				</div>
+				<div class="work-process__container">
+					<h1 class='work-process__title'>Work process</h1>
+					<div class="work-process__tabs tabs" id='tabs'>
+						<div class="tabs__nav">
+							<button class="tabs__button" data-btn-tabs='tab-1'>Search an Idea</button>
+							<button class="tabs__button" data-btn-tabs='tab-2'>Design</button>
+							<button class="tabs__button" data-btn-tabs='tab-3'>Development</button>
+							<button class="tabs__button" data-btn-tabs='tab-4'>Release</button>
+						</div>
+						<div class="tabs__content">
+							<div class="tabs__item" id="tab-1">
+								<p class='tabs__text'>
+									God he their every blessed upon male earth also
+									midst fill creeping Seas their winged can't shall
+									signs sea mornings gathered brought, creeping
+									fruitful you'll open there bearing.
+								</p>
+								<a class="tabs__link button button--w" href="#"><span>about us</span></a>
+							</div>
+							<div class="tabs__item" id="tab-2">
+								<p class='tabs__text'>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum itaque fugit ullam
+									ipsa, fuga vel aliquam odio molestias ut. Architecto ad blanditiis adipisci incidunt
+									quasi voluptatem impedit tempore praesentium maxime beatae odit, voluptate, eaque
+									enim fugit suscipit itaque. Impedit omnis dolor sunt ipsum ducimus eius qui quisquam
+									voluptatum, corrupti veritatis unde eum commodi repellat! Eius consectetur beatae
+									ullam molestiae! Neque natus hic sequi, obcaecati distinctio, labore tenetur
+									eligendi nisi sint tempora unde dignissimos delectus saepe adipisci eius sunt
+									placeat amet, quis doloremque praesentium? Fugit repellendus amet optio dolor
+									praesentium saepe corrupti aspernatur sapiente quis nisi! Sint cumque sed eos quis.
+								</p>
+								<a class="tabs__link button button--w" href="#"><span>about us</span></a>
+							</div>
+							<div class="tabs__item" id="tab-3">
+								<p class='tabs__text'>
+									Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, maiores aut
+									reiciendis ipsum, odio facilis soluta nemo ab voluptatem quidem asperiores commodi
+									repellat eligendi, laborum quae nam vel nulla adipisci aspernatur. Consequatur,
+									consequuntur sequi, earum ipsa odio expedita et quasi doloribus deserunt architecto
+									facere incidunt itaque temporibus at. Laborum quisquam architecto in voluptatibus ut
+									eaque doloremque sapiente. Incidunt aut ex, atque obcaecati voluptatum sit
+									laudantium velit culpa rem odio inventore, iste, nostrum corporis at debitis sunt
+									perferendis quaerat perspiciatis. Maiores, saepe earum! Ipsum, facere odit doloribus
+									culpa praesentium, laboriosam impedit, molestias quos placeat similique dicta esse
+									nihil ipsa aut. Placeat ipsum ratione ex magni maxime deleniti vero porro molestias
+									facilis eos nostrum voluptates cumque temporibus neque tempora omnis laudantium,
+									sunt fugit ut a voluptatum rem? Porro asperiores atque odit, sed aliquid rerum
+									excepturi officiis ducimus architecto a, vel quae. Explicabo nisi pariatur, mollitia
+									consequatur aperiam esse perferendis ea dolorum rerum modi magni tenetur totam velit
+									praesentium ex fuga soluta iste? Amet assumenda accusantium beatae rem in architecto
+									molestiae maxime. Impedit ad quod fugit amet, ut odio aut. Tempora nihil neque illo
+									debitis quisquam quam distinctio, aspernatur ut error, earum possimus! Repudiandae
+									porro accusamus minus voluptate quae voluptatibus labore voluptas temporibus, illum
+									ducimus ex officiis consequatur. Fugiat quaerat hic at libero animi dolor, ad minima
+									quod eos iure officia maiores accusantium nulla quisquam aliquam nesciunt quidem
+									necessitatibus voluptatem earum delectus facere ducimus vitae. Nihil provident
+									aliquam vero iste aliquid qui, nam eaque voluptas inventore, optio odio perferendis
+									magni saepe, et a in dolores consequuntur adipisci doloribus distinctio debitis sunt
+									obcaecati cum. Repudiandae quae modi hic alias voluptates praesentium ducimus,
+									sapiente, nostrum eveniet assumenda neque quasi officia at ab, perferendis
+									laudantium quia maxime dolorem temporibus fugiat voluptatibus accusamus. Maxime
+									illum voluptatem quo cum placeat? Veniam atque quia possimus maxime deserunt,
+									provident tempore mollitia. Ut, saepe, aspernatur sint accusamus iste voluptas
+									sapiente ipsam placeat optio officiis debitis dolor minima deleniti accusantium
+									possimus rem modi? Molestias eius reprehenderit iste aut quod id debitis molestiae
+									culpa, ipsum sint quasi corporis minima dolorum quam soluta quos voluptates
+									repudiandae quibusdam veritatis velit incidunt natus. Harum fuga cupiditate quasi
+									aliquid enim eos nostrum voluptates molestias, adipisci eligendi laboriosam
+									reiciendis cum possimus quo, ipsa in placeat obcaecati! Aliquid blanditiis
+									perspiciatis nemo maxime, qui corporis consectetur porro mollitia minima sed
+									accusamus quasi adipisci eligendi magnam, dolores dolor? Veritatis dignissimos
+									consectetur commodi architecto maiores consequuntur, rem distinctio nulla non et
+									illum, molestias voluptatum minima? Ea, facere deleniti. Illum veritatis sunt totam
+									ducimus maxime ut nostrum excepturi? Illum architecto atque dolorum quis quasi saepe
+									molestias blanditiis fugit sit nostrum sunt dolorem adipisci, ipsum nam quia
+									repellendus deleniti quos enim distinctio quaerat dolore, iusto officia optio natus?
+									Fuga cumque quaerat fugit vero excepturi rem, recusandae vel. Facere aut quam
+									excepturi, tenetur repellat iste molestias assumenda hic perferendis qui atque
+									laborum eaque beatae consequuntur temporibus voluptates, ad dolore minus inventore!
+									Repellat incidunt delectus perspiciatis earum minima distinctio ex voluptas nobis
+									porro ipsam amet labore voluptate corporis magnam commodi, ea cum quia beatae
+									repudiandae obcaecati?
+								</p>
+								<a class="tabs__link button button--w" href="#"><span>about us</span></a>
+							</div>
+							<div class="tabs__item" id="tab-4">
+								<p class='tabs__text'>
+									God he their every blessed upon male earth also
+									midst fill creeping Seas their winged can't shall
+									signs sea mornings gathered brought, creeping
+									fruitful you'll open there bearing.
+								</p>
+								<a class="tabs__link button button--w" href="#"><span>about us</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- #endregion -->
+			<!-- #region we-create -->
+			<section class="page__we-create we-create">
+				<div class="we-create__container">
+					<div class="we-create__block block-img">
+						<div class="block-img__item block-img__item--top">
+							<div class="block-img__image-ibg block-img__image-ibg--wide">
+								<picture><source srcset="img/Servuces/9.webp" type="image/webp"><img src="img/Servuces/9.jpg" alt=""></picture>
+							</div>
+						</div>
+						<div class="block-img__item block-img__item--bot">
+							<div class="block-img__image-ibg block-img__image-ibg--mini">
+								<picture><source srcset="img/Servuces/11.webp" type="image/webp"><img src="img/Servuces/11.jpg" alt=""></picture>
+							</div>
+							<div class="block-img__image-ibg block-img__image-ibg--big">
+								<picture><source srcset="img/Servuces/10.webp" type="image/webp"><img src="img/Servuces/10.jpg" alt=""></picture>
+							</div>
+						</div>
+					</div>
+					<div class="we-create__block block-body">
+						<div class="block-body__item block-body__item--top">
+							<h4 class="block-body__title">We create everything
+								digital, printable and
+								analytical <span>🔥</span></h4>
+						</div>
+						<div class="block-body__item block-body__item--bot">
+							<div class="block-body__text">
+								<p>Won't seasons, appear days them stars replenish
+									divided. All second forth. Him place was seas man and
+									gathering creepeth called fly. Them sea place lights,
+									midst bearing fourth above.</p>
+							</div>
+							<a href="#" class="block-body__button button button--b"><span>about us</span></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- #endregion -->
+			<!-- #region values -->
+			<section class="page__values values">
+				<div class="values__container">
+					<h4 class="values__title">
+						Values
+					</h4>
+					<div class="values__slider val-swiper">
+						<div class="values__wrapper swiper-wrapper">
+							<div class="values__slide swiper-slide">
+								<div class="values__item item-values">
+									<div class="item-values__image-ibg">
+										<img src="img/values/1.svg" alt="">
+									</div>
+									<div class="item-values__body">
+										<h5 class="item-values__title">Excellent Quality</h5>
+										<div class="item-values__text">
+											<p>Forth forth moveth shall i unto
+												midst tree, a fruit great subdue
+												a every be so a fowl.
+												Lorem ipsum dolor sit,
+												a every be so a fowl.
+												Lorem ipsum dolor sit,
+											</p>
+										</div>
+										<a href="" class="item-values__button"><span>read more</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="values__slide swiper-slide">
+								<div class="values__item item-values">
+									<div class="item-values__image-ibg">
+										<img src="img/values/2.svg" alt="">
+									</div>
+									<div class="item-values__body">
+										<h5 class="item-values__title">Excellent Quality</h5>
+										<div class="item-values__text">
+											<p>Forth forth moveth shall i unto
+												midst tree, a fruit great subdue
+												a every be so a fowl.</p>
+										</div>
+										<a href="" class="item-values__button"><span>read more</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="values__slide swiper-slide">
+								<div class="values__item item-values">
+									<div class="item-values__image-ibg">
+										<img src="img/values/3.svg" alt="">
+									</div>
+									<div class="item-values__body">
+										<h5 class="item-values__title">Excellent Quality</h5>
+										<div class="item-values__text">
+											<p>Forth forth moveth shall i unto
+												midst tree, a fruit great subdue
+												a every be so a fowl.</p>
+										</div>
+										<a href="" class="item-values__button"><span>read more</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="values__slide swiper-slide">
+								<div class="values__item item-values">
+									<div class="item-values__image-ibg">
+										<img src="img/values/3.svg" alt="">
+									</div>
+									<div class="item-values__body">
+										<h5 class="item-values__title">Excellent Quality</h5>
+										<div class="item-values__text">
+											<p>Forth forth moveth shall i unto
+												midst tree, a fruit great subdue
+												a every be so a fowl.</p>
+										</div>
+										<a href="" class="item-values__button"><span>read more</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="values__slide swiper-slide">
+								<div class="values__item item-values">
+									<div class="item-values__image-ibg">
+										<img src="img/values/3.svg" alt="">
+									</div>
+									<div class="item-values__body">
+										<h5 class="item-values__title">Excellent Quality</h5>
+										<div class="item-values__text">
+											<p>Forth forth moveth shall i unto
+												midst tree, a fruit great subdue
+												a every be so a fowl.</p>
+										</div>
+										<a href="" class="item-values__button"><span>read more</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="values__slide swiper-slide">
+								<div class="values__item item-values">
+									<div class="item-values__image-ibg">
+										<img src="img/values/3.svg" alt="">
+									</div>
+									<div class="item-values__body">
+										<h5 class="item-values__title">Excellent Quality</h5>
+										<div class="item-values__text">
+											<p>Forth forth moveth shall i unto
+												midst tree, a fruit great subdue
+												a every be so a fowl.</p>
+										</div>
+										<a href="" class="item-values__button"><span>read more</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-scrollbar"></div>
+					</div>
+				</div>
+			</section>
+			<!-- #endregion -->
+			<!-- #region articles -->
+			<div class="page__articles articles">
+				<div class="articles__container">
+					<!-- #region Swiper -->
+					<div class="articles__swiper vSwiper">
+						<div class="articles__wrapper swiper-wrapper">
+							<div class="articles__slide swiper-slide">
+								<div class="articles__slide-ico">
+									<svg xmlns="http://www.w3.org/2000/svg" width="38" height="24" viewBox="0 0 38 24" fill="none">
+										<path d="M0 24L10.1466 0H18.801L13.4293 24H0ZM19.199 24L29.3455 0H38L32.5288 24H19.199Z" fill="white" />
+									</svg>
+								</div>
+								<div class="articles__slide-content">
+									<div class='articles__slide-text'>
+										<p>
+											“ There from stars gathering gathered, upon tree brought
+											life fruitful shall that together without there form
+											You make, morning he from unto. ”
+										</p>
+									</div>
+									<span class="articles__slide-subtitle">Brian Newton, Unvab Inc.</span>
+								</div>
+							</div>
+							<div class="articles__slide swiper-slide">
+								<div class="articles__slide-ico">
+									<svg xmlns="http://www.w3.org/2000/svg" width="38" height="24" viewBox="0 0 38 24" fill="none">
+										<path d="M0 24L10.1466 0H18.801L13.4293 24H0ZM19.199 24L29.3455 0H38L32.5288 24H19.199Z" fill="white" />
+									</svg>
+								</div>
+								<div class="articles__slide-content">
+									<div class='articles__slide-text'>
+										<p>
+											“ There from stars gathering gathered, upon tree brought
+											life fruitful shall that together without there form
+											You make, morning he from unto. ”
+										</p>
+									</div>
+									<span class="articles__slide-subtitle">Brian Newton, Unvab Inc.</span>
+								</div>
+							</div>
+							<div class="articles__slide swiper-slide">
+								<div class="articles__slide-ico">
+									<svg xmlns="http://www.w3.org/2000/svg" width="38" height="24" viewBox="0 0 38 24" fill="none">
+										<path d="M0 24L10.1466 0H18.801L13.4293 24H0ZM19.199 24L29.3455 0H38L32.5288 24H19.199Z" fill="white" />
+									</svg>
+								</div>
+								<div class="articles__slide-content">
+									<div class='articles__slide-text'>
+										<p>
+											“ There from stars gathering gathered, upon tree brought
+											life fruitful shall that together without there form
+											You make, morning he from unto. ”
+										</p>
+									</div>
+									<span class="articles__slide-subtitle">Brian Newton, Unvab Inc.</span>
+								</div>
+							</div>
+							<div class="articles__slide swiper-slide">
+								<div class="articles__slide-ico">
+									<svg xmlns="http://www.w3.org/2000/svg" width="38" height="24" viewBox="0 0 38 24" fill="none">
+										<path d="M0 24L10.1466 0H18.801L13.4293 24H0ZM19.199 24L29.3455 0H38L32.5288 24H19.199Z" fill="white" />
+									</svg>
+								</div>
+								<div class="articles__slide-content">
+									<div class='articles__slide-text'>
+										<p>
+											“ There from stars gathering gathered, upon tree brought
+											life fruitful shall that together without there form
+											You make, morning he from unto. ”
+										</p>
+									</div>
+									<span class="articles__slide-subtitle">Brian Newton, Unvab Inc.</span>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+					<!-- #endregion -->
+				</div>
+			</div>
+			<!-- #endregion -->
+			<!-- #region brands -->
+			<section class="page__brands brands">
+				<div class="brands__container">
+					<div class="brands__content">
+						<div class="brands__left">
+							<p class="brands__subtext">our clients</p>
+							<h1 class="brands__title">We've worked with 50+ brands</h1>
+						</div>
+						<div class="brands__right">
+							<div class="brands__images">
+								<picture><source srcset="img/brands/logo-1.webp" type="image/webp"><img class="brands__img" src="img/brands/logo-1.png" alt=""></picture>
+							</div>
+							<div class="brands__images">
+								<picture><source srcset="img/brands/logo-2.webp" type="image/webp"><img class="brands__img" src="img/brands/logo-2.png" alt=""></picture>
+							</div>
+							<div class="brands__images">
+								<picture><source srcset="img/brands/logo-3.webp" type="image/webp"><img class="brands__img" src="img/brands/logo-3.png" alt=""></picture>
+							</div>
+							<div class="brands__images">
+								<picture><source srcset="img/brands/logo-4.webp" type="image/webp"><img class="brands__img" src="img/brands/logo-4.png" alt=""></picture>
+							</div>
+							<div class="brands__images">
+								<picture><source srcset="img/brands/logo-5.webp" type="image/webp"><img class="brands__img" src="img/brands/logo-5.png" alt=""></picture>
+							</div>
+							<div class="brands__images">
+								<picture><source srcset="img/brands/logo-6.webp" type="image/webp"><img class="brands__img" src="img/brands/logo-6.png" alt=""></picture>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- #endregion -->
+			<!-- #region whats-new -->
+			<section class="page__whats-new whats-new">
+				<div class="whats-new__container">
+					<div class="whats-new__header">
+						<h1 class="whats-new__title">What’s new?</h1>
+					</div>
+					<div class="whats-new__content">
+						<div class="whats-new__card">
+							<div class="whats-new__card-images">
+								<picture><source srcset="img/whats-new/rain/1.webp" type="image/webp"><img class="whats-new__card-img" src="img/whats-new/rain/1.jpg" alt="whats-new-card-img"></picture>
+							</div>
+							<div class="whats-new__card-title">
+								Office explained in fewer than
+								100+ Characters
+							</div>
+							<span class="whats-new__card-date">
+								12 may, 2020
+							</span>
+						</div>
+						<div class="whats-new__card">
+							<div class="whats-new__card-images">
+								<picture><source srcset="img/whats-new/rain/2.webp" type="image/webp"><img class="whats-new__card-img" src="img/whats-new/rain/2.jpg" alt="whats-new-card-img"></picture>
+							</div>
+							<div class="whats-new__card-title">
+								This week's top Stories about
+								Development
+							</div>
+							<span class="whats-new__card-date">
+								08 may, 2020
+							</span>
+						</div>
+						<div class="whats-new__card">
+							<div class="whats-new__card-images">
+								<picture><source srcset="img/whats-new/rain/3.webp" type="image/webp"><img class="whats-new__card-img" src="img/whats-new/rain/3.jpg" alt="whats-new-card-img"></picture>
+							</div>
+							<div class="whats-new__card-title">
+								Facts about Business that you
+								never knew
+							</div>
+							<span class="whats-new__card-date">
+								05 may, 2020
+							</span>
+						</div>
+					</div>
+					<div class="whats-new__link">
+						<a href="#" class="button button--b"><span>about us</span></a>
+					</div>
+				</div>
+			</section>
+			<!-- #endregion -->
+			<!-- #region lets-work -->
+			<section class="page__lets-work lets-work">
+				<div class="lets-work__container">
+					<a href="#" class="lets-work__content">
+						<h4 class="lets-work__title"><span>Let’s work</span> <br>
+							together</h4>
+						<div class="lets-work__image-ibg">
+							<picture><source srcset="img/lets-work/anime/image.webp" type="image/webp"><img src="img/lets-work/anime/image.jpg" alt="img"></picture>
+						</div>
+					</a>
+				</div>
+			</section>
+			<!-- #endregion -->
+		</main>
+		<footer class="footer">
+			<div class="footer__sharpe sharpe"></div>
+			<div class="footer__container">
+				<div class="footer__content">
+					<!-- === -->
+					<div class="footer__themebau themebau">
+						<div class="themebau__head">
+							<h4 class="themebau__title">Themebau.</h4>
+							<div class="themebau__text">
+								<p>Be saying moveth spirit fruitful
+									called set evening fly give shall
+									moveth lesser very.</p>
+							</div>
+						</div>
+						<div class="themebau__contacts">
+							<a class="themebau__phone" href="+442071128285">+44 207 112 82 85</a>
+							<a href="hello@themebau.com" class="themebau__email">hello@themebau.com</a>
+						</div>
+					</div>
+					<!-- === -->
+					<div class="footer__main main-footer">
+						<div class="main-footer__label">subscribe of newsletter</div>
+						<form class="main-footer__form" action="files/sendmail/sendmail.php" method="POST">
+							<input type="email" name="form[email]" data-error="Error" placeholder="Your Email *" class="main-footer__input input" id='email-input'>
+							<button type="submit" class="main-footer__button button button--b"><span>Send</span></button>
+						</form>
+						<nav class="main-footer__acion acion-footer">
+							<div class="acion-footer__body">
+								<div class="acion-footer__column">
+									<ul class="acion-footer__list">
+										<li class="acion-footer__item">
+											<a href="" class="acion-footer__link">Abou Us</a>
+										</li>
+										<li class="acion-footer__item">
+											<a href="" class="acion-footer__link">Services</a>
+										</li>
+										<li class="acion-footer__item">
+											<a href="" class="acion-footer__link">Our team</a>
+										</li>
+										<li class="acion-footer__item">
+											<a href="" class="acion-footer__link">Careers</a>
+										</li>
+									</ul>
+								</div>
+								<div class="acion-footer__column">
+									<ul class="acion-footer__list">
+										<li class="acion-footer__item">
+											<a href="" class="acion-footer__link">Work process</a>
+										</li>
+										<li class="acion-footer__item">
+											<a href="" class="acion-footer__link">FAQ</a>
+										</li>
+										<li class="acion-footer__item">
+											<a href="" class="acion-footer__link">Our blog</a>
+										</li>
+										<li class="acion-footer__item">
+											<a href="" class="acion-footer__link">Contacts</a>
+										</li>
+									</ul>
+								</div>
+								<div class="acion-footer__column">
+									<ul class="acion-footer__list">
+										<li class="acion-footer__item">
+											<a href="" class="acion-footer__link">Privacy</a>
+										</li>
+										<li class="acion-footer__item">
+											<a href="" class="acion-footer__link">Terms of te use</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</nav>
+					</div>
+				</div>
+				<div class="footer__bottom bottom-footer">
+					<ul class="bottom-footer__social social">
+						<li class="social__items">
+							<a class="social__link" href="">
+								<img src="img/footer/facebook.svg" alt="">
+							</a>
+						</li>
+						<li class="social__items">
+							<a class="social__link" href="">
+								<img src="img/footer/twitter.svg" alt="">
+							</a>
+						</li>
+						<li class="social__items">
+							<a class="social__link" href="">
+								<img src="img/footer/instagram.svg" alt="">
+							</a>
+						</li>
+					</ul>
+					<div class="bottom-footer__copy">
+						<p>© 2020 - RunWebRun.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="menu-burger" id='menu-burger'>
+			<button class='menu-burger__btn-close' id='menu-burger-close'>
+				<span></span>
+			</button>
+			<ul class="menu-burger__list">
+				<li class="menu-burger__item">
+					<a class="menu-burger__link" href="#">Home</a>
+				</li>
+				<li class="menu-burger__item">
+					<a class="menu-burger__link" href="#">Projects</a>
+				</li>
+				<li class="menu-burger__item">
+					<a class="menu-burger__link" href="#">Pages</a>
+				</li>
+				<li class="menu-burger__item">
+					<a class="menu-burger__link" href="#">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20240210173554"></script>
+</body>
+
+</html>
